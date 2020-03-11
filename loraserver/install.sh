@@ -42,12 +42,12 @@ sudo -u postgres psql -U postgres -f init_sql.sql
 apt -f -y install apt-transport-https dirmngr
 #3.2 download lora packages
 wget https://artifacts.loraserver.io/packages/2.x/deb/pool/main/l/lora-gateway-bridge/lora-gateway-bridge_2.7.1_linux_armv7.deb
-wget https://artifacts.loraserver.io/packages/2.x/deb/pool/main/l/loraserver/loraserver_2.7.0_linux_armv7.deb
-wget https://artifacts.loraserver.io/packages/2.x/deb/pool/main/l/lora-app-server/lora-app-server_2.6.0_linux_armv7.deb
+wget https://artifacts.loraserver.io/packages/2.x/deb/pool/main/l/loraserver/loraserver_2.8.2_linux_armv7.deb
+wget https://artifacts.loraserver.io/packages/2.x/deb/pool/main/l/lora-app-server/lora-app-server_2.6.1_linux_armv7.deb
 #3.3 install lora packages
 dpkg -i lora-gateway-bridge_2.7.1_linux_armv7.deb
-dpkg -i loraserver_2.7.0_linux_armv7.deb
-dpkg -i lora-app-server_2.6.0_linux_armv7.deb
+dpkg -i loraserver_2.8.2_linux_armv7.deb
+dpkg -i lora-app-server_2.6.1_linux_armv7.deb
 
 #4. configure lora
 # configure LoRa Server
